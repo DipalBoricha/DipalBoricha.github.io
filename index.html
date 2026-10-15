@@ -3,99 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0B1728">
-  <meta name="description" content="Portfolio of Dipal Boricha, IT educator, technical trainer and founder of AIT – Advanced Information Technology in Bhavnagar, Gujarat.">
-  <title>Dipal Boricha | Portfolio</title>
+  <meta name="theme-color" content="#27333b">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="canonical" href="https://dipalboricha.github.io/">
+  <meta name="description" content="Dipal Boricha, IT educator and technical trainer in Bhavnagar, Gujarat. Experience in computer hardware, networking, server technologies, Linux and cybersecurity training.">
+  <title>Dipal Boricha | IT Educator &amp; Technical Trainer</title>
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://dipalboricha.github.io/">
+  <meta property="og:title" content="Dipal Boricha | IT Educator &amp; Technical Trainer">
+  <meta property="og:description" content="IT education and practical technical training in Bhavnagar, Gujarat.">
+  <meta property="og:image" content="https://dipalboricha.github.io/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dipal Boricha, IT Educator and Technical Trainer in Bhavnagar, Gujarat">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{--navy:#0b1728;--navy2:#122b43;--cyan:#25c5d6;--teal:#087f9b;--ink:#182c3d;--muted:#5d7184;--line:#dce5ed;--paper:#f4f7fa;--white:#fff;--soft:#eaf1f6;--radius:18px;--shadow:0 12px 34px rgba(10,28,45,.08);--max:1160px}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    :root{--navy:#27333b;--navy2:#34434b;--cyan:#78969a;--teal:#58777b;--ink:#30383b;--muted:#687174;--line:#dedfd9;--paper:#f7f6f1;--white:#fffefa;--soft:#eeeee8;--radius:8px;--shadow:0 3px 12px rgba(35,45,48,.035);--max:1120px;scroll-padding-top:84px}
     body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-    a{color:inherit;text-decoration:none}
+    a{color:inherit;text-decoration:none} a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
     img{max-width:100%;display:block} body{overflow-wrap:break-word} .wrap,.hero-copy,.card,.contact-card{min-width:0} button,a{touch-action:manipulation}
+    .skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:var(--white);color:var(--navy);padding:10px 14px;border:2px solid var(--teal);border-radius:6px;font-weight:700}
+    .skip-link:focus{top:12px}
     .wrap{width:min(var(--max),91%);margin:auto}
-    header{position:sticky;top:0;z-index:30;background:#0b1728f5;backdrop-filter:blur(12px);border-bottom:1px solid #243b50}
+    header{position:sticky;top:0;z-index:30;background:rgba(39,51,59,.97);backdrop-filter:blur(12px);border-bottom:1px solid #4b5a61}
     .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{font-weight:800;letter-spacing:.02em;color:#fff;font-size:1.15rem}.brand span{color:var(--cyan)}
-    nav{display:flex;align-items:center;gap:23px;color:#d6e2ec;font-size:.9rem;font-weight:600}
+    .brand{font-weight:800;letter-spacing:.02em;color:#fffefa;font-size:1.15rem}.brand span{color:var(--cyan)}
+    nav{display:flex;align-items:center;gap:23px;color:#eeeae0;font-size:.9rem;font-weight:600}
     nav a:hover{color:var(--cyan)}
-    .menu{display:none;background:transparent;border:1px solid #486178;color:#fff;border-radius:9px;padding:8px 12px;font-size:1.15rem}
-    .hero{padding:82px 0 76px;background:linear-gradient(120deg,#0b1728 0%,#102b42 68%,#154050 100%);color:#fff;position:relative;overflow:hidden}
-    .hero:after{content:"";position:absolute;right:-180px;top:-300px;width:620px;height:620px;border:1px solid #25c5d62b;border-radius:50%;box-shadow:0 0 0 55px #25c5d60a,0 0 0 110px #25c5d606;pointer-events:none}
+    .menu{display:none;background:transparent;border:1px solid #718073;color:#fffefa;border-radius:9px;padding:8px 12px;font-size:1.15rem}
+    .hero{padding:82px 0 76px;background:#27333b;color:#fff;position:relative;overflow:hidden}
     .hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,.65fr);gap:60px;align-items:center;position:relative;z-index:1}
     .eyebrow,.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800;color:var(--teal)}
-    .hero .eyebrow{color:#58dce8}
+    .hero .eyebrow{color:#c4d5d5}
     h1{font-size:clamp(3.2rem,6.3vw,5.5rem);line-height:1.02;letter-spacing:-.06em;margin:15px 0 18px;color:#fff}
     h1 span{color:var(--cyan)}
-    .role{font-size:clamp(1.25rem,2.2vw,1.65rem);font-weight:650;color:#e7f2f8;margin-bottom:16px}
-    .lead{font-size:1.12rem;line-height:1.8;color:#c9d8e5;max-width:690px;margin:0 0 25px}
+    .role{font-size:clamp(1.25rem,2.2vw,1.65rem);font-weight:650;color:#f2eee5;margin-bottom:16px}
+    .lead{font-size:1.12rem;line-height:1.8;color:#dedfd5;max-width:690px;margin:0 0 25px}
     .actions{display:flex;gap:12px;flex-wrap:wrap}
     .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:12px 18px;font-weight:750;font-size:.95rem;border:1px solid transparent;transition:transform .18s,background .18s,color .18s}
     .btn:hover{transform:translateY(-2px)}
     .primary{background:var(--cyan);color:#071725;border-color:var(--cyan)}
-    .secondary{background:transparent;color:#fff;border-color:#56738b}
+    .secondary{background:transparent;color:#fff;border-color:var(--cyan)}
     .secondary:hover{color:var(--cyan);border-color:var(--cyan)}
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}
-    .tag{border:1px solid #35546a;background:#132b40;color:#e0ebf4;border-radius:99px;padding:6px 11px;font-size:.8rem}
-    .photo-wrap{width:min(290px,100%);aspect-ratio:4/5;margin:auto;border-radius:22px;border:1px solid #36576b;background:linear-gradient(145deg,#15344a,#0b1728);overflow:hidden;box-shadow:0 26px 60px #0004;padding:9px}
+    .tag{border:1px solid #58777b;background:#34434b;color:#f1eee6;border-radius:99px;padding:6px 11px;font-size:.8rem}
+    .photo-wrap{width:min(290px,100%);aspect-ratio:4/5;margin:auto;border-radius:22px;border:1px solid #58777b;background:linear-gradient(145deg,#34434b,#27333b);overflow:hidden;box-shadow:none;padding:6px}
     .photo{width:100%;height:100%;object-fit:cover;object-position:center;border-radius:15px}
     section{padding:76px 0}
     .section-light{background:#fff}
-    .section-alt{background:#eaf0f5}
+    .section-alt{background:#efebe2}
     .section-head{max-width:800px;margin-bottom:34px}
     .section-head h2{font-size:clamp(2.1rem,4vw,3rem);line-height:1.15;letter-spacing:-.045em;color:var(--navy);margin:8px 0 13px}
     .section-head p{font-size:1.04rem;color:var(--muted);margin:0}
     .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
-    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:var(--shadow)}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:27px;box-shadow:none}
     .card h3{font-size:1.2rem;color:var(--navy);margin:0 0 9px}
     .card p{font-size:.98rem;color:var(--muted);margin:0}
-    .about-copy p{margin:0 0 15px;color:#445b6e}.about-copy p:last-child{margin-bottom:0}
+    .about-copy p{margin:0 0 15px;color:var(--ink)}.about-copy p:last-child{margin-bottom:0}
     .facts{display:grid;gap:17px}
     .fact{display:grid;grid-template-columns:43px 1fr;gap:12px;align-items:start}
-    .iconbox{width:43px;height:43px;border-radius:12px;background:#e2f4f2;border:1px solid #cce9e5;color:var(--teal);display:grid;place-items:center;font-size:.8rem;font-weight:850}
+    .iconbox{width:43px;height:43px;border-radius:12px;background:#e8e9df;border:1px solid #d6d9cc;color:var(--teal);display:grid;place-items:center;font-size:.8rem;font-weight:850}
     .fact strong{display:block;color:var(--navy);font-size:.98rem}.fact span{display:block;color:var(--muted);font-size:.93rem;line-height:1.55}
     .inline{color:var(--teal);font-weight:750;display:inline-block;margin-top:5px;font-size:.9rem}
     .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .skill{padding:24px;border-radius:15px;border:1px solid var(--line);background:#fff;min-height:150px;box-shadow:0 7px 20px #10243a06;transition:transform .18s,box-shadow .18s}
-    .skill:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .skill{padding:20px 18px;border-radius:6px;border:1px solid var(--line);border-top:2px solid var(--teal);background:var(--white);min-height:135px;box-shadow:none;transition:background .18s}
+    .skill:hover{background:#f0f1eb}
     .skill small{color:var(--teal);font-size:.76rem;font-weight:850;letter-spacing:.12em}
     .skill h3{font-size:1.12rem;line-height:1.4;margin:8px 0;color:var(--navy)}
     .skill p{font-size:.94rem;color:var(--muted);margin:0;line-height:1.65}
     .timeline{max-width:980px;position:relative;margin-left:4px;padding-left:34px}
-    .timeline:before{content:"";position:absolute;left:8px;top:12px;bottom:18px;width:2px;background:linear-gradient(var(--cyan),#c8dce8)}
-    .timeline-item{position:relative;display:grid;grid-template-columns:190px minmax(0,1fr);gap:22px;padding:23px 25px;margin:0 0 17px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 8px 24px rgba(10,28,45,.045)}
-    .timeline-item:before{content:"";position:absolute;left:-33px;top:29px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:4px solid #eaf7f9;box-shadow:0 0 0 1px #8adbe3}
+    .timeline:before{content:"";position:absolute;left:8px;top:12px;bottom:18px;width:2px;background:linear-gradient(var(--cyan),#d8d2c5)}
+    .timeline-item{position:relative;display:grid;grid-template-columns:190px minmax(0,1fr);gap:22px;padding:23px 25px;margin:0 0 17px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:none}
+    .timeline-item:before{content:"";position:absolute;left:-33px;top:29px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:4px solid var(--paper);box-shadow:0 0 0 1px var(--teal)}
     .timeline-item:last-child{margin-bottom:0}
     .date{color:var(--teal);font-weight:800;font-size:.88rem;line-height:1.5;letter-spacing:.01em}
     .timeline-item h3{font-size:1.15rem;line-height:1.4;color:var(--navy);margin:0 0 5px}
     .timeline-item .org{font-weight:650;color:#344e63;margin-bottom:7px;font-size:.94rem}
     .timeline-item p{color:var(--muted);font-size:.95rem;line-height:1.7;margin:0}
-    .highlight{background:var(--navy2);color:#fff;border-left:5px solid var(--cyan);border-radius:16px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px;box-shadow:var(--shadow)}
+    .highlight{background:var(--navy2);color:#fff;border-left:5px solid var(--cyan);border-radius:8px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:25px;box-shadow:var(--shadow)}
     .highlight h3{font-size:1.35rem;margin:7px 0;color:#fff}
-    .highlight p{color:#d0dce7;margin:4px 0;font-size:.97rem}
+    .highlight p{color:#e0e1d7;margin:4px 0;font-size:.97rem}
     .highlight .kicker{color:var(--cyan)}
     .qualifications{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .qual{background:#fff;border:1px solid var(--line);border-radius:15px;padding:24px;box-shadow:0 7px 20px #10243a06}
+    .qual{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;box-shadow:none}
     .qual small{color:var(--teal);font-weight:850;font-size:.8rem}
     .qual h3{font-size:1.05rem;line-height:1.45;color:var(--navy);margin:9px 0}
     .qual p{font-size:.93rem;color:var(--muted);margin:0}
     .pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-    .pills span{font-size:.8rem;background:#eaf1f6;color:#25445d;padding:5px 9px;border-radius:6px;font-weight:650}
+    .pills span{font-size:.8rem;background:var(--soft);color:var(--navy);padding:5px 9px;border-radius:6px;font-weight:650}
     .approach{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .approach-item{background:#f8fbfd;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:0 13px 13px 0;padding:22px}
+    .approach-item{background:transparent;border:0;border-top:2px solid var(--teal);border-radius:0;padding:20px 8px}
     .approach-item h3{font-size:1.05rem;color:var(--navy);margin:0 0 7px}
     .approach-item p{font-size:.94rem;color:var(--muted);margin:0}
     .contact{background:var(--navy);color:#fff}
-    .contact .section-head h2{color:#fff}.contact .section-head p{color:#c9d8e5}.contact .kicker{color:var(--cyan)}
+    .contact .section-head h2{color:#fff}.contact .section-head p{color:#dedfd5}.contact .kicker{color:#c4d5d5}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .contact-card{border:1px solid #ffffff2b;background:#ffffff08;border-radius:15px;padding:23px}
+    .contact-card{border:1px solid #ffffff30;background:#ffffff0a;border-radius:8px;padding:23px}
     .contact-card strong{display:block;color:#fff;font-size:1.08rem;margin-bottom:4px}
-    .contact-card span,.contact-card a{color:#d0deea;font-size:.97rem;overflow-wrap:anywhere}
-    .contact-card a:hover{color:var(--cyan)}
-    footer{background:#07111f;color:#9eb1c2;padding:23px 0;font-size:.86rem}
+    .contact-card span,.contact-card a{color:#e0e1d7;font-size:.97rem;overflow-wrap:anywhere}
+    .contact-card a:hover{color:#c4d5d5}
+    footer{background:var(--navy2);color:#e0e1d7;padding:23px 0;font-size:.86rem}
     .footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     @media(max-width:900px){.hero-grid{gap:35px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:760px){
@@ -144,10 +157,11 @@
   </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top">Dipal Boricha<span>.</span></a>
-    <button class="menu" id="menuButton" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <button class="menu" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav" type="button">☰</button>
     <nav id="mainNav" aria-label="Main navigation">
       <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#lecture">Expert Lecture</a><a href="#qualifications">Qualifications</a><a href="#contact">Contact</a>
     </nav>
@@ -155,14 +169,14 @@
 </header>
 
 <main id="top">
-  <section class="hero">
+  <section class="hero" id="main-content" tabindex="-1">
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <div class="eyebrow">IT EDUCATOR · TECHNICAL TRAINER</div>
         <h1>Dipal <span>Boricha</span></h1>
         <div class="role">IT Educator &amp; Technical Trainer</div>
-        <p class="lead">Practical IT education across Computer Hardware, Networking, Linux, Server Technologies and Cybersecurity.</p>
-        <p class="lead">Founder of <strong>AIT – Advanced Information Technology</strong>, Bhavnagar, Gujarat.</p>
+        <p class="lead">I teach computer hardware, networking, Linux, server technologies and cybersecurity, with an emphasis on practical learning and troubleshooting.</p>
+        <p class="lead">I am developing <strong>AIT – Advanced Information Technology</strong> in Bhavnagar, Gujarat.</p>
         <div class="actions">
           <a class="btn primary" href="#experience">View Experience</a>
           <a class="btn secondary" href="#expertise">Technical Expertise</a>
@@ -171,25 +185,23 @@
         <div class="tags"><span class="tag">Hands-on Training</span><span class="tag">IT Infrastructure</span><span class="tag">Cybersecurity</span><span class="tag">Bhavnagar, Gujarat</span></div>
       </div>
       <div class="photo-wrap">
-        <img class="photo" src="dipal-boricha-profile.jpg" alt="Dipal Boricha profile photograph">
+        <img class="photo" src="dipal-boricha-profile.jpg" alt="Portrait of Dipal Boricha, IT educator and technical trainer" loading="eager" fetchpriority="high">
       </div>
     </div>
   </section>
 
   <section id="about" class="section-light">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">INTRODUCTION</div><h2>About Me</h2><p>Professional background, technical interests and approach to IT education.</p></div>
+      <div class="section-head"><div class="kicker">INTRODUCTION</div><h2>About Me</h2><p>My background in IT teaching and hands-on technical training.</p></div>
       <div class="about-grid">
         <div class="card about-copy">
           <h3>IT Education &amp; Practical Training</h3>
-          <p>I am an IT educator and technical trainer with experience dating back to 2012. My core areas include computer hardware, networking, CCNA topics, server administration, Linux and cybersecurity.</p>
-          <p>From July 2017 to March 2025, I owned the IANT Computer Education franchise in Bhavnagar. I am now building <strong>AIT – Advanced Information Technology</strong> to support practical, lab-based learning and stronger hands-on technical skills.</p>
-          <p>My teaching style focuses on clear explanations, guided practice and troubleshooting. Cybersecurity is taught with an emphasis on authorization, safety and ethical use of tools.</p>
+          <p>IT educator since 2012, specializing in computer hardware, networking, CCNA topics, server administration, Linux and cybersecurity. I focus on practical, hands-on learning and authorized cybersecurity exercises.</p>
         </div>
         <div class="card facts">
-          <div class="fact"><div class="iconbox">AIT</div><div><strong>Current Initiative</strong><span>AIT – Advanced Information Technology</span><a class="inline" href="https://advanced-it-lab.github.io/" target="_blank" rel="noopener noreferrer">Visit AIT website ↗</a></div></div>
+          <div class="fact"><div class="iconbox">AIT</div><div><strong>Founder</strong><span>AIT – Advanced Information Technology</span><a class="inline" href="https://advanced-it-lab.github.io/" target="_blank" rel="noopener noreferrer">Visit AIT website ↗</a></div></div>
           <div class="fact"><div class="iconbox">IT</div><div><strong>Training Experience</strong><span>Teaching and IT training since 2012</span></div></div>
-          <div class="fact"><div class="iconbox">AAB</div><div><strong>AAB Member</strong><span>Member of the Academic Association of Bhavnagar (AAB).</span></div></div>
+          <div class="fact"><div class="iconbox">AAB</div><div><strong>AAB Member</strong><span>Academic Association of Bhavnagar</span></div></div>
           <div class="fact"><div class="iconbox">IN</div><div><strong>Location</strong><span>Bhavnagar, Gujarat, India</span></div></div>
         </div>
       </div>
@@ -198,35 +210,37 @@
 
   <section id="expertise" class="section-alt">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">TECHNICAL SKILLS</div><h2>Technical Expertise</h2><p>Core areas of instruction and technical knowledge.</p></div>
+      <div class="section-head"><div class="kicker">TECHNICAL SKILLS</div><h2>Technical Expertise</h2></div>
       <div class="cards">
         <article class="skill"><small>01 / HARDWARE</small><h3>Computer Hardware</h3><p>PC components, assembly, maintenance, diagnostics and troubleshooting.</p></article>
-        <article class="skill"><small>02 / NETWORKS</small><h3>Computer Networking</h3><p>Networking fundamentals, network devices, addressing and troubleshooting.</p></article>
+        <article class="skill"><small>02 / NETWORKS</small><h3>Computer Networking</h3><p>Networking fundamentals, addressing, network devices and troubleshooting.</p></article>
         <article class="skill"><small>03 / ROUTING</small><h3>CCNA Topics</h3><p>Routing, switching and network configuration concepts.</p></article>
         <article class="skill"><small>04 / SERVERS</small><h3>Microsoft Server</h3><p>Windows Server concepts, server administration and infrastructure basics.</p></article>
         <article class="skill"><small>05 / LINUX</small><h3>Linux Administration</h3><p>Linux fundamentals, command-line usage and administration concepts.</p></article>
-        <article class="skill"><small>06 / SECURITY</small><h3>Cybersecurity</h3><p>Security awareness, defensive concepts and practical security learning.</p></article>
-        <article class="skill"><small>07 / TESTING</small><h3>Ethical Hacking</h3><p>Authorized security testing and ethical penetration-testing concepts.</p></article>
-        <article class="skill"><small>08 / INFRASTRUCTURE</small><h3>IT Infrastructure</h3><p>Hardware, operating systems, networks and server environments.</p></article>
-        <article class="skill"><small>09 / PRACTICALS</small><h3>Lab-Based Training</h3><p>Guided practice, demonstrations and structured troubleshooting exercises.</p></article>
+        <article class="skill"><small>06 / SECURITY</small><h3>Cybersecurity</h3><p>Security awareness, defensive practices and guided lab learning.</p></article>
+        <article class="skill"><small>07 / TESTING</small><h3>Ethical Hacking</h3><p>Authorized security testing and penetration-testing concepts.</p></article>
+        <article class="skill"><small>08 / SYSTEMS</small><h3>IT Systems &amp; Infrastructure</h3><p>Hardware, operating systems, network devices and server environments.</p></article>
+        <article class="skill"><small>09 / PRACTICALS</small><h3>Practical Troubleshooting</h3><p>Guided lab practice, demonstrations and systematic fault-finding exercises.</p></article>
       </div>
     </div>
   </section>
 
   <section id="experience" class="section-light">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">CAREER HISTORY</div><h2>Professional Journey</h2><p>A timeline of my work in IT education, technical training and the development of AIT.</p></div>
+      <div class="section-head"><div class="kicker">CAREER HISTORY</div><h2>Professional Journey</h2><p>Teaching and technical training roles across hardware, networking and cybersecurity.</p></div>
       <div class="timeline">
-        <article class="timeline-item"><div class="date">March 2025 – Present</div><div><h3>Building AIT – Advanced Information Technology</h3><div class="org">AIT · Bhavnagar, Gujarat</div><p>Developing AIT with an emphasis on practical, lab-based IT learning. The focus is on helping learners build technical understanding through guided hands-on practice and real-world troubleshooting.</p></div></article>
-        <article class="timeline-item"><div class="date">July 2017 – March 2025</div><div><h3>Franchise Owner</h3><div class="org">IANT Computer Education · Bhavnagar</div><p>Owned and managed the IANT Computer Education franchise in Bhavnagar, supporting IT education and technical skill development. The franchise was handed over to a partner in March 2025.</p></div></article>
-        <article class="timeline-item"><div class="date">2012 – Present</div><div><h3>IT Educator &amp; Technical Trainer</h3><div class="org">Computer Hardware · Networking · Servers · Linux · Cybersecurity</div><p>Teaching and technical training experience dating back to 2012, covering computer hardware, networking, server administration, Linux and cybersecurity-related topics.</p></div></article>
+        <article class="timeline-item"><div class="date">April 2026 – July 2026</div><div><h3>Online Cyber Security Trainer</h3><div class="org">Easy Learn Academy</div><p>Delivered online cybersecurity lectures and practical demonstrations using guided examples to explain security concepts.</p></div></article>
+        <article class="timeline-item"><div class="date">April 2025 – July 2025</div><div><h3>Hardware Faculty – Field Technician &amp; Peripherals</h3><div class="org">IT Expert Academy · Bhavnagar</div><p><strong>Batch completed successfully.</strong> Trained students in computer hardware installation, system assembly and motherboard-level troubleshooting. Conducted hands-on sessions on printers, scanners, monitors and peripheral devices. Provided lab practice based on onsite troubleshooting scenarios and covered preventive maintenance and client-side support operations.</p></div></article>
+        <article class="timeline-item"><div class="date">March 2025 – Present</div><div><h3>Building AIT – Advanced Information Technology</h3><div class="org">AIT · Bhavnagar, Gujarat</div><p>Developing AIT as an independent IT training initiative focused on practical lessons and technical troubleshooting.</p></div></article>
+        <article class="timeline-item"><div class="date">July 2017 – March 2025</div><div><h3>Franchise Owner</h3><div class="org">IANT Computer Education · Bhavnagar</div><p>Owned and managed the IANT Computer Education franchise in Bhavnagar, delivering IT education and technical training. I handed the franchise over to my partner in March 2025.</p></div></article>
+        <article class="timeline-item"><div class="date">2012 – Present</div><div><h3>IT Educator &amp; Technical Trainer</h3><div class="org">Computer Hardware · Networking · Servers · Linux · Cybersecurity</div><p>Teaching and training across computer hardware, networking, server administration, Linux and cybersecurity-related topics since 2012.</p></div></article>
       </div>
     </div>
   </section>
 
   <section id="lecture" class="section-alt">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">ACADEMIC ENGAGEMENT</div><h2>Expert Lecture</h2><p>Guest expert session in the area of networking and security.</p></div>
+      <div class="section-head"><div class="kicker">ACADEMIC ENGAGEMENT</div><h2>Expert Lecture</h2><p>Guest session on networking and security.</p></div>
       <div class="highlight">
         <div><div class="kicker">2 FEBRUARY 2023</div><h3>Expert Lecture on Network &amp; Security</h3><p><strong>Institution:</strong> Nandkunvarba Mahila College</p><p>Session on Network &amp; Security as part of the college's IT workshop.</p></div>
         <a class="btn primary" href="https://nandkunvarbamahilacollege.com/?events=it-workshop-4" target="_blank" rel="noopener noreferrer">View Event Details ↗</a>
@@ -236,7 +250,7 @@
 
   <section id="qualifications" class="section-light">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">TRAINING &amp; CERTIFICATES</div><h2>Qualifications</h2><p>Technical qualifications and certificates provided for this portfolio.</p></div>
+      <div class="section-head"><div class="kicker">TRAINING &amp; CERTIFICATES</div><h2>Qualifications</h2><p>Technical training certificates.</p></div>
       <div class="qualifications">
         <article class="qual"><small>2011–2012</small><h3>Computer Hardware &amp; Networking Administrator</h3><p>IANT</p><div class="pills"><span>Grade: B+</span></div></article>
         <article class="qual"><small>2020</small><h3>Ethical Hacking Expert R-11</h3><p>Star Certifications</p><div class="pills"><span>Grade: A+</span></div></article>
@@ -247,11 +261,11 @@
 
   <section class="section-alt" id="approach">
     <div class="wrap">
-      <div class="section-head"><div class="kicker">TRAINING PHILOSOPHY</div><h2>My Approach to Training</h2><p>Practical learning built around understanding, guided practice and responsible technology use.</p></div>
+      <div class="section-head"><div class="kicker">TRAINING PHILOSOPHY</div><h2>My Approach to Training</h2><p>How I explain concepts and guide practical work.</p></div>
       <div class="approach">
-        <article class="approach-item"><h3>Hands-on Practice</h3><p>Use demonstrations and guided lab exercises to reinforce core technical concepts.</p></article>
-        <article class="approach-item"><h3>Real-World Troubleshooting</h3><p>Build understanding through structured problem-solving and system/network diagnostics.</p></article>
-        <article class="approach-item"><h3>Responsible Security</h3><p>Keep cybersecurity learning within authorized, ethical and controlled lab environments.</p></article>
+        <article class="approach-item"><h3>Hands-on Practice</h3><p>Explain a task, demonstrate the steps and guide learners as they practise.</p></article>
+        <article class="approach-item"><h3>Technical Troubleshooting</h3><p>Identify likely causes of system and network problems and test fixes methodically.</p></article>
+        <article class="approach-item"><h3>Responsible Security</h3><p>Practise security tools only on systems and networks where testing is permitted.</p></article>
       </div>
     </div>
   </section>
